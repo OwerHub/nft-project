@@ -17,7 +17,7 @@ export default function Landing() {
     </div> 
     <div className={styles.contentWrapper}>
  {/*      <Head/>   */}
-    
+    <div className="upPlaceholder" style={{height: '25vh'}}>plac</div>
      <Minting/>
     </div>
     
