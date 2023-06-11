@@ -4,50 +4,32 @@
 
 .container{
   box-sizing: border-box;
-  background-color: black;
+
   position: relative;
 
  /*  width: 100vw;
   height: 100vh; */
 }
 
+
+
+.contentWrapper{
+/*   position: absolute; */
+  z-index: 5;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+
+.backgroundWrapper{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .stoneTopImage {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 0;
-  left: 0;
 }
 
-.head{
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  overflow-x: hidden;
-}
-.headContainer{
-  position: relative;
-  background-color:rgba(255, 0, 0, .2)
-}
-
-.blackTop{
-  width: 100vw;
-  height: auto;
-  top:0;
-  left: 0;
-  z-index: 2;
-  margin-bottom:5%;
-}
-
-.headContentWrapper{
-  position: absolute;
-  top: 15%;
-  left: 2%
-
-}
-
-.inkLogo{
-  width: 10%;
-  height: auto;
-}

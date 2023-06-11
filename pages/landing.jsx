@@ -1,19 +1,26 @@
 import styles from '../styles/Landing.module.css'
 import Head from './components/Head';
- import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
-import blackTop from '../assets/backgrounds/blackTop.webp'
+import Minting from './components/Minting';
+import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
+
 import Image from 'next/image';
-import inkHeadIcon from '../assets/etc/inkHeadQuartersLogo.png'
+
 
 export default function Landing() {
 
 
   return (
     <div className={styles.container}>
-   <Image src={stoneTop} className={styles.stoneTopImage} alt='stoneTop' /> 
-     <Head/>
-
-    {/* ----MINTING SOON---- */}
+   
+   <div className={styles.backgroundWrapper}>
+      <Image src={stoneTop} className={styles.stoneTopImage} alt='stoneTop' /> 
+    </div> 
+    <div className={styles.contentWrapper}>
+      <Head/>  
+   CSEZD MEG
+     
+    </div>
+    
 
     </div>
   );

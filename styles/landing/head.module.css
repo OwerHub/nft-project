@@ -7,12 +7,10 @@
 }
 .headContainer{
   position: relative;
-  background-color:rgba(255, 0, 0, .2)
+   background-color:rgba(255, 0, 0, .2) 
 }
 
-.backgroundWrapper{
-  
-}
+x
 
 .blackTop{
   width: 100vw;
@@ -26,11 +24,41 @@
 .headContentWrapper{
   position: absolute;
   top: 15%;
-  left: 2%
-
+  left: 2%;
+  display: flex;
 }
 
+.logoWrapper{
+  width: 25%;
+  
+}
 .inkLogo{
-  width: 10%;
+ /*  background-color: rgba(214, 31, 31, 0.5); */
+  width: 100%;
   height: auto;
+  margin-bottom: -1rem;
+}
+
+.iconContainer{
+  display:flex;
+  justify-content: space-around;
+  padding: 0 3rem;
+  z-index: 5;
+  width: 100%;
+  background-color: green;
+
+}
+.blueIconWrapper{
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: yellow;
+}
+
+.blueIcons{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0
 }
