@@ -17,8 +17,8 @@ export default function Landing() {
     </div> 
     <div className={styles.contentWrapper}>
  {/*      <Head/>   */}
-   <h1 style={{fontFamily: 'Banhart'}}>Csezd meg</h1>
-     
+    
+     <Minting/>
     </div>
     
 
