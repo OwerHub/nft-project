@@ -16,8 +16,8 @@ export default function Landing() {
       <Image src={stoneTop} className={styles.stoneTopImage} alt='stoneTop' /> 
     </div> 
     <div className={styles.contentWrapper}>
-      <Head/>  
-   CSEZD MEG
+ {/*      <Head/>   */}
+   <h1 style={{fontFamily: 'Banhart'}}>Csezd meg</h1>
      
     </div>
     
