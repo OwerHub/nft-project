@@ -1,0 +1,22 @@
+.container{
+  position: relative;
+  height: 100%;
+  .background{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    img{
+      width: 100%;
+      height: auto;;
+    }
+  }
+
+  .content{
+    padding: 23rem 0 0;;
+    .head{
+      z-index: 2;
+    }
+  }
+}

@@ -1,10 +1,3 @@
-.tryRed {
-
-  & div {
-
-    background-color: red;
-  }
-}
 
 .ntfPics {
   width: 100%;
@@ -12,28 +5,26 @@
 }
 
 .mintingContainer {
-  .head {
-    margin: 0 0 4rem 0;
-    font-size: 10em;
-    display: flex;
-    justify-content: center;
-  }
+  padding: 0 0 11rem;
+  overflow-x: hidden;
+
 
   .nftCardWrapper {
+    
     display: flex;
     justify-content: center;
     gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 6rem auto 0;
 
     .nftCard {
-      max-width: 300px;
+      max-width: 550px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       &:nth-child(2n -1) {
         .nftHeadPic {
-          transform: translateY(25px)
+          transform: translateY(40px)
         }
       }
       .nftHeadPic {
@@ -41,7 +32,8 @@
         box-shadow: 0 20px 10px black;
       }
       .ntfLogoPic{
-        @extend .ntfPics
+        @extend .ntfPics;
+        margin: 1rem 0 0 0;
       }
     }
   }
