@@ -21,29 +21,31 @@ export default function Minting() {
   // TODO png-k helyett lehet, elég lesz kisebb webp, akkor kevesebet kell letöltenie
 
   const nfts = [
-    {card: bugzCard, logo: bugzLogo},
-    {card: goofballsCard, logo: goofballsLogo},
-    {card: inkHeadCard, logo: inkHeadLogo},
-    {card: splatterCard, logo: splatterLogo},
-    {card: sugarHitsCard, logo: sugarHitsLogo},
+    { card: inkHeadCard, logo: inkHeadLogo },
+    { card: bugzCard, logo: bugzLogo },
+    { card: goofballsCard, logo: goofballsLogo },
+    { card: splatterCard, logo: splatterLogo },
+    { card: sugarHitsCard, logo: sugarHitsLogo },
   ]
 
 
   return (
     <div className={styles.mintingContainer} >
-    <div className={styles.head} >
-      minting soon
+      <div className={styles.head} >
+        minting soon
+      </div>
+      <div className={styles.nftCardWrapper}>
+
+        {nfts.map((cardData, i) => (
+          <div key={`ntfcrd${i}`} className={styles.nftCard} >
+            <Image className={styles.nftHeadPic} src={cardData.card} alt={`nftCard${i}`} />
+            <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+              <Image className={styles.ntfLogoPic} src={cardData.logo} alt={`nftCard${i}`} />
+            </div>
+          </div>
+        )
+        )}
+      </div>
     </div>
-    <div className={styles.nftCardWrapper}>
-      { nfts.map((cardData, i) => (
-        <div key={`ntfcrd${i}`} className={styles.nftCard} >
-          <Image className={styles.nftImage} src={cardData.card} alt={`nftCard${i}`} />
-          <Image  className={styles.nftImage} src={cardData.logo} alt={`nftCard${i}`} />
-        </div>
-      )
-        
-        ) }
-    </div>
-  </div>
   )
 }

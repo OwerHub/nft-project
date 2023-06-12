@@ -1,40 +1,48 @@
-.tryRed{
+.tryRed {
 
-  & div{
+  & div {
 
     background-color: red;
   }
 }
 
-.mintingContainer{
-    .head{
-      font-size: 10em;
+.ntfPics {
+  width: 100%;
+  height: auto;
+}
+
+.mintingContainer {
+  .head {
+    margin: 0 0 4rem 0;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nftCardWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+
+    .nftCard {
+      max-width: 300px;
       display: flex;
-      justify-content: center;
-    }
-    .nftCardWrapper{
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      width: 80%;
-      margin: 0 auto;
-      .nftCard{
-        max-width: 300px;
-        &:nth-child(2n+1) {
-          .nftImage:first-child{
-            transform: translateY(25px);
-          }
-        }
-        .nftImage{
-          width: 100%;
-          height: auto;
-          &:first-child{
-            box-shadow: 0 15px 10px black;
-          }
-          &:nth-child(2){
-            
-          }
+      flex-direction: column;
+      justify-content: space-between;
+      &:nth-child(2n -1) {
+        .nftHeadPic {
+          transform: translateY(25px)
         }
       }
+      .nftHeadPic {
+        @extend .ntfPics;
+        box-shadow: 0 20px 10px black;
+      }
+      .ntfLogoPic{
+        @extend .ntfPics
+      }
     }
+  }
 }
