@@ -20,7 +20,6 @@ export default function Landing() {
 
       <div className={styles.backgroundWrapper}>
         <Image src={stoneTop} className={styles.stoneTopImage} alt='stoneTop' />
-        <Image src={stoneTop} className={styles.stoneBottomImage} alt='stoneBottom' />
       </div>
       {/*      <Head/>   */}
       <div className={styles.contentWrapper}>

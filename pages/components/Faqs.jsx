@@ -14,6 +14,7 @@ export default function Faqs() {
     </div>
     <div className={styles.content}>
       <SectionTitle  title='FAQ' />
+    
     </div>
 
   </div>
