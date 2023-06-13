@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 
 import aboutBackground from '../../assets/backgrounds/aboutBackground.webp'
-
+import aboutShadow from '../../assets/backgrounds/aboutShadowPerformance.webp'
 
 export default function About() {
   const [containerHeight, setContainerHeight] = useState(null)
@@ -13,10 +13,13 @@ export default function About() {
   // I'm not sure, then this is the best way... and if it is, than i should make a hook for this
 
   // TODO it must handle the on-the-fly-resize
+
   const bgref = useRef(null)
+  
+  // TODO refactor this to a custom hook 
   useEffect(() => {
     if (bgref.current?.clientHeight) {
-      setContainerHeight(bgref.current?.clientHeight)
+      setContainerHeight(bgref.current?.clientHeight + 50)
     }
     
   }, [bgref ])
@@ -24,12 +27,14 @@ export default function About() {
   console.log(containerHeight)
 
 
-  // i have to draw a shadow,
+  // PERFORMANCE shadow to SVG
   console.log(bgref.current?.clientHeight)
   return (
     <div className={styles.container} style={{ minHeight: containerHeight }}>
       <div className={styles.background} ref={bgref}>
-        < Image src={aboutBackground} alt='aboutBackGround' />
+        < Image src={aboutBackground} className={styles.backgroundImg} alt='aboutBackGround'  />
+        < Image src={aboutShadow}  className={styles.backgroundShadow}  alt='aboutBackGroundShadow' />
+        
       </div>
 
       <div className={styles.content}>

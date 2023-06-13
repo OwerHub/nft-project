@@ -23,7 +23,9 @@ export default function Landing() {
         <Minting />
         <About/>
         <Story/>
-
+          <div style={{position:'relative', zIndex: 100}}>
+            balasdasd
+          </div>
       </div>
 
 
