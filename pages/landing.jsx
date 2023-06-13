@@ -3,6 +3,7 @@ import Head from './components/Head';
 import Minting from './components/Minting';
 import About from './components/About';
 import Story from './components/Story'
+import GameRoom from './components/GameRoom';
 import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
 
 import Image from 'next/image';
@@ -23,9 +24,7 @@ export default function Landing() {
         <Minting />
         <About/>
         <Story/>
-          <div style={{position:'relative', zIndex: 100}}>
-            balasdasd
-          </div>
+        <GameRoom/>
       </div>
 
 
