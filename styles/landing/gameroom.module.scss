@@ -1,14 +1,16 @@
+
+
 .container{
   position: relative;
   height: 100%;
   z-index: 4;
-  min-height:70vh ;
+  min-height:100vh ;
 
   .background{
     position: absolute;
     top: -30vh;
     left: 0;
-    height: calc(100% + 60vh);
+    height: calc(100% + 50vh);
     width: 100%;
     opacity: .7;
     background-color: black;

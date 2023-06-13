@@ -1,0 +1,21 @@
+.container{
+  position: relative;
+  height: 100%;
+  z-index: 6;
+  min-height:70vh ;
+  .background{
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content{
+    padding-top: 7rem;
+    position: relative;
+    z-index: 15;
+  }
+}

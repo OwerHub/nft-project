@@ -1,10 +1,12 @@
 import styles from '../styles/Landing.module.css'
+import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
+
 import Head from './components/Head';
 import Minting from './components/Minting';
 import About from './components/About';
 import Story from './components/Story'
 import GameRoom from './components/GameRoom';
-import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
+import CartonTheater from './components/CartonTheater';
 
 import Image from 'next/image';
 
@@ -25,6 +27,7 @@ export default function Landing() {
         <About/>
         <Story/>
         <GameRoom/>
+        <CartonTheater/>
       </div>
 
 
