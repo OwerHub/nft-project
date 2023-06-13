@@ -1,0 +1,23 @@
+$marginTop: 19%;
+
+.container{
+  margin-top: 0-$marginTop;
+  position: relative;
+  overflow: hidden;
+  min-height: 120vh ;
+  .background{
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content{
+    position: relative;
+    z-index: 15;
+   padding-top: calc($marginTop + 4rem);
+  }
+}
