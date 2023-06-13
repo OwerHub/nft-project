@@ -28,6 +28,7 @@ export default function Landing() {
         <Story/>
         <GameRoom/>
         <CartonTheater/>
+
       </div>
 
 
