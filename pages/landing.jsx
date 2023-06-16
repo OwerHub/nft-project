@@ -18,20 +18,12 @@ export default function Landing() {
   // TODO set the headHeight to headRef's Height
   // TODO ref add to Head
 
-  useEffect(() => {
-    if (headRef.current?.clientHeight) {
-      setContainerHeight(headRef.current?.clientHeight)
-    }
-  }, [headRef])
-
-  console.info('headRef is: ', headRef.current)
-
   return (
     <div className={styles.container} style={{ position: 'relative' }}>
       <div className={styles.backgroundWrapper}>
         <Image src={stoneTop} className={styles.stoneTopImage} alt="stoneTop" />
       </div>
-      <Head ref={headRef} />
+      <Head />
 
       <div className={styles.contentWrapper}>
         <div className="upPlaceholder" style={{ height: '40vh' }}></div>

@@ -29,17 +29,35 @@ function Head() {
       <div className={styles.headContentWrapper}>
         <div className={styles.logoWrapper}>
           <Image src={inkHeadIcon} className={styles.inkLogo} alt="inkLogo" />
-          <div
-            className={styles.iconContainer}
-            style={{ backgroundColor: 'red' }}
-          >
-            <div className={styles.blueIconWrapper}>
-              <Image
-                className={styles.blueIcons}
-                src={speakerIconShadow}
-                alt="speakercon"
-                style={{ transform: 'translateY(10px)' }}
-              />
+          <div className={styles.iconContainer}>
+            <Image
+              className={styles.blueIcons}
+              src={speakerIcon}
+              alt="speakercon"
+            />
+            <Image
+              className={styles.blueIcons}
+              src={discordIcon}
+              alt="speakercon"
+            />
+            <Image
+              className={styles.blueIcons}
+              src={openSeaIcon}
+              alt="speakercon"
+            />
+            <Image
+              className={styles.blueIcons}
+              src={twitterIcon}
+              alt="speakercon"
+            />
+            {/*  <div className={styles.blueIconWrapper}>
+            <Image
+              className={styles.blueIcons}
+              src={speakerIconShadow}
+              alt="speakericonshadow"
+              style={{ transform: 'translateY(10px)' }}
+            />
+            
               <Image
                 className={styles.blueIcons}
                 src={speakerIcon}
@@ -66,7 +84,7 @@ function Head() {
                 src={twitterIcon}
                 alt="speakercon"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

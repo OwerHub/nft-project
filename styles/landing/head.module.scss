@@ -38,6 +38,7 @@
   }
 }
 
+// TODO use or delete
 $height-values: (xs: 120px,
   s: 170px,
   m: 220px,
@@ -51,7 +52,7 @@ $height-values: (xs: 120px,
   z-index: 100;
   width: 100%;
   top: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: rgba(255, 0, 0, .2);
 
   height: 200px;
@@ -88,36 +89,32 @@ $height-values: (xs: 120px,
       background-color: rgba(250, 227, 16, 0.2);
 
       .inkLogo {
-        /*  background-color: rgba(214, 31, 31, 0.5); */
+        background-color: rgba(214, 31, 31, 0.5);
         width: auto;
         height: 80%;
-        margin: 0 0 -20% 0;
       }
 
       .iconContainer {
+        position: relative;
+        background-color: rgb(8, 109, 22);
+        height: 13%;
         display: flex;
-        justify-content: space-around;
-        padding: 0 3rem;
-        z-index: 5;
-        width: 100%;
-        background-color: green;
+        justify-content: space-between;
+        padding: 0 2rem;
 
-        .blueIconWrapper {
-          width: 100%;
-          height: 30%;
-          position: relative;
-          background-color: yellow;
-          display: none;
 
-          .blueIcons {
-
-            height: 20px;
-            width: 20px;
-            top: 0;
-            left: 0
-          }
+        .blueIcons {
+          @include responsive(height,
+            (xs, 15px),
+            (s, 20px),
+            (m, 25px),
+            (l, 35px),
+            (xl, 40px),
+            (xxl, 40px));
+          width: auto;
         }
       }
+
     }
   }
 
