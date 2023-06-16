@@ -50,41 +50,6 @@ function Head() {
               src={twitterIcon}
               alt="speakercon"
             />
-            {/*  <div className={styles.blueIconWrapper}>
-            <Image
-              className={styles.blueIcons}
-              src={speakerIconShadow}
-              alt="speakericonshadow"
-              style={{ transform: 'translateY(10px)' }}
-            />
-            
-              <Image
-                className={styles.blueIcons}
-                src={speakerIcon}
-                alt="speakercon"
-              />
-            </div>
-            <div className={styles.blueIconWrapper}>
-              <Image
-                className={styles.blueIcons}
-                src={discordIcon}
-                alt="speakercon"
-              />
-            </div>
-            <div className={styles.blueIconWrapper}>
-              <Image
-                className={styles.blueIcons}
-                src={openSeaIcon}
-                alt="speakercon"
-              />
-            </div>
-            <div className={styles.blueIconWrapper}>
-              <Image
-                className={styles.blueIcons}
-                src={twitterIcon}
-                alt="speakercon"
-              />
-            </div> */}
           </div>
         </div>
       </div>

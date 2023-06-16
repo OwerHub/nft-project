@@ -6,7 +6,6 @@ import { useRef, useState, useEffect } from 'react'
 import Head from './components/Head'
 import Minting from './components/Minting'
 import About from './components/About'
-import AboutNew from './components/AboutNew'
 import Story from './components/Story'
 import GameRoom from './components/GameRoom'
 import CartonTheater from './components/CartonTheater'
@@ -30,7 +29,7 @@ export default function Landing() {
         <div className="upPlaceholder" style={{ height: '400px' }}></div>
         <Minting />
         {/*         <About /> */}
-        <AboutNew />
+        <About />
         <Story />
         <GameRoom />
         <CartonTheater />

@@ -1,11 +1,13 @@
 $marginTop: 19%;
+//$marginTop: 0%;
 
-.container{
+.container {
   margin-top: 0-$marginTop;
   position: relative;
-  .background{
-    img{
-      position: absolute;
+
+  .background {
+    img {
+      position: relative;
       top: 0;
       left: 0;
       z-index: 6;
@@ -13,9 +15,13 @@ $marginTop: 19%;
       height: auto;
     }
   }
-  .content{
-    position: relative;
+
+  .content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 15;
-   padding-top: calc($marginTop + 4rem);
+    padding-top: calc($marginTop + 4rem);
   }
 }

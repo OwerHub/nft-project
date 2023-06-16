@@ -4,7 +4,7 @@
   z-index: 10;
 
   .background {
-    position: relative;
+    position: absolute;
     width: 100%;
     top: 0;
     right: 0;
@@ -34,9 +34,8 @@
   }
 
   .content {
-    position: absolute;
-    top: 20%;
-    width: 100%;
+    position: relative;
+    padding: 23rem 0 0;
     z-index: 15;
 
     .head {}

@@ -1,12 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react'
-import styles from '../../styles/landing/aboutNew.module.scss'
+import styles from '../../styles/landing/about.module.old.scss'
 import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 
 import aboutBackground from '../../assets/backgrounds/aboutBackground.webp'
 import aboutShadow from '../../assets/backgrounds/aboutShadowPerformance.webp'
 
-export default function AboutNew() {
+export default function About() {
   const [containerHeight, setContainerHeight] = useState(null)
 
   // set the outer container height to more than background height
@@ -28,8 +28,8 @@ export default function AboutNew() {
   // PERFORMANCE shadow to SVG
   console.log(bgref.current?.clientHeight)
   return (
-    <div className={styles.container}>
-      <div className={styles.background}>
+    <div className={styles.container} style={{ minHeight: containerHeight }}>
+      <div className={styles.background} ref={bgref}>
         <Image
           src={aboutBackground}
           className={styles.backgroundImg}
