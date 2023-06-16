@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/landing/head.module.css'
-import Image from 'next/image';
+import styles from '../../styles/landing/head.module.scss'
+import Image from 'next/image'
 
 import blackTop from '../../assets/backgrounds/blackTop.webp'
 import inkHeadIcon from '../../assets/etc/inkHeadQuartersLogo.png'
@@ -18,47 +18,57 @@ import twitterIcon from '../../assets/icons/blueIcons/twitterIcon.png'
 
 function Head() {
   return (
-    <div className={`${styles.head}`} >
-      <div className={styles.headContainer} style={{ backgroundImage: `url(${blackTop})` }}>
-        <div className={styles.backgroundWrapper}>
-          <Image src={blackTop} className={styles.blackTop} alt='blackTop' />
-        </div>
+    <div
+      className={styles.headContainer}
+      style={{ backgroundImage: `url(${blackTop})` }}
+    >
+      <div className={styles.backgroundWrapper}>
+        <Image src={blackTop} className={styles.blackTop} alt="blackTop" />
+      </div>
 
-        <div className={styles.headContentWrapper} >
-          <div className={styles.logoWrapper}>
-            <Image src={inkHeadIcon} className={styles.inkLogo} alt='inkLogo' />
-            <div className={styles.iconContainer} style={{ backgroundColor: 'red' }}>
-             
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={speakerIconShadow} alt='speakercon' style={{ transform: 'translateY(10px)' }} />
-                <Image className={styles.blueIcons} src={speakerIcon} alt='speakercon' />
-              </div>
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={discordIcon} alt='speakercon' />
-              </div>
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={openSeaIcon} alt='speakercon'  />
-              </div>
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={twitterIcon} alt='speakercon'  />
-              </div>
-
-              {/* <div className={styles.blueIconWrapper}>
-              </div>
- */}
-              {/* <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={discordIcon} alt='speakercon' />
-              </div>
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={openSeaIcon} alt='speakercon' />
-              </div>
-              <div className={styles.blueIconWrapper}>
-                <Image className={styles.blueIcons} src={twitterIcon} alt='speakercon' />
-              </div> */}
+      <div className={styles.headContentWrapper}>
+        <div className={styles.logoWrapper}>
+          <Image src={inkHeadIcon} className={styles.inkLogo} alt="inkLogo" />
+          <div
+            className={styles.iconContainer}
+            style={{ backgroundColor: 'red' }}
+          >
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={speakerIconShadow}
+                alt="speakercon"
+                style={{ transform: 'translateY(10px)' }}
+              />
+              <Image
+                className={styles.blueIcons}
+                src={speakerIcon}
+                alt="speakercon"
+              />
+            </div>
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={discordIcon}
+                alt="speakercon"
+              />
+            </div>
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={openSeaIcon}
+                alt="speakercon"
+              />
+            </div>
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={twitterIcon}
+                alt="speakercon"
+              />
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
