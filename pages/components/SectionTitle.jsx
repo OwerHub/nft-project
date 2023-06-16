@@ -7,7 +7,8 @@ export default function SectionTitle(props) {
     fontSize: '12em',
     display: 'flex',
     justifyContent: 'center',
-    letterSpacing: '-15px'
+    letterSpacing: '-15px',
+    textAlign: 'center'
   }
 
   return <div style={dynamicStyle}>{title}</div>
