@@ -1,11 +1,12 @@
-.container{
+.container {
   position: relative;
   height: 100%;
   z-index: 6;
-  min-height:70vh ;
-  .background{
-    img{
-      position: absolute;
+
+
+  .background {
+    img {
+      position: relative;
       top: 0;
       left: 0;
       z-index: 6;
@@ -13,9 +14,13 @@
       height: auto;
     }
   }
-  .content{
+
+  .content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding-top: 12rem;
-    position: relative;
     z-index: 15;
   }
 }
