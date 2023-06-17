@@ -8,10 +8,12 @@
     position: absolute;
     top: -20rem;
     left: 0;
-    height: calc(100% + 20rem);
+    height: calc(100% + 40rem);
     width: 100%;
-    opacity: .7;
-    background-color: black;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/backgrounds/stoneUpperBg1K.webp');
+    background-size: cover;
+    background-position: center;
   }
 
   .content {
