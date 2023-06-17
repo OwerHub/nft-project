@@ -17,6 +17,34 @@ import twitterIcon from '../../assets/icons/blueIcons/twitterIcon.png'
 // TODO - if the icons come in SVG, the shadows more better
 
 function Head() {
+  const menuData = [
+    {
+      content: 'About',
+      translateY: '20px',
+      rotate: '-10deg'
+    },
+    {
+      content: 'Story',
+      translateY: '110px',
+      rotate: '0deg'
+    },
+    {
+      content: 'GameRoom',
+      translateY: '5px',
+      rotate: '2deg'
+    },
+    {
+      content: 'carton Theater',
+      translateY: '75px',
+      rotate: '-5deg'
+    },
+    {
+      content: 'faq',
+      translateY: '30px',
+      rotate: '10deg'
+    }
+  ]
+
   return (
     <div
       className={styles.headContainer}
@@ -51,6 +79,19 @@ function Head() {
               alt="speakercon"
             />
           </div>
+        </div>
+        <div className={styles.menuWrapper}>
+          {menuData.map((data, i) => (
+            <div
+              className={styles.menuItem}
+              key={`mnnt${i}`}
+              style={{
+                transform: `translateY(${data.translateY}) rotate(${data.rotate})`
+              }}
+            >
+              {data.content}
+            </div>
+          ))}
         </div>
       </div>
     </div>
