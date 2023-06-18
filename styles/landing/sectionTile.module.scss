@@ -1,0 +1,17 @@
+@import '../mixins.scss';
+
+.titleContainer {
+
+  font-size: 4rem;
+  @include responsive(font-size,
+    (xs, 5rem),
+    (s, 6rem),
+    (m, 7rem),
+    (l, 8rem),
+    (xl, 10rem),
+    (xxl, 11rem));
+  display: flex;
+  justify-content: center;
+  letter-spacing: -15px;
+  text-align: center
+}

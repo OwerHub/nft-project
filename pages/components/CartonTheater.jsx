@@ -11,7 +11,7 @@ export default function CartonTheater() {
         <Image src={theaterBackground} alt="cartonTheaterBg" />
       </div>
       <div className={styles.content}>
-        <SectionTitle title="Theater" />
+        <SectionTitle title="Cartoon Theater" />
       </div>
     </div>
   )
