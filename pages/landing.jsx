@@ -1,4 +1,4 @@
-import styles from '../styles/Landing.module.css'
+import styles from '../styles/landing.module.scss'
 import stoneTop from '../assets/backgrounds/stoneUpperBg1K.webp'
 import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
@@ -26,7 +26,7 @@ export default function Landing() {
       <Head />
 
       <div className={styles.contentWrapper}>
-        <div className="upPlaceholder" style={{ height: '400px' }}></div>
+        <div className={styles.placeholder}></div>
         <Minting />
         {/*         <About /> */}
         <About />

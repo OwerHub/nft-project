@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 .container {
   position: relative;
   height: 100%;
@@ -29,16 +31,28 @@
       left: 0;
       z-index: 8;
       opacity: .7;
-      transform: translateY(70px);
+      transform: translateY(15px);
+      @include responsive(transform,
+        (xs, translateY(20px)),
+        (s, translateY(25px)),
+        (m, translateY(30px)),
+        (l, translateY(35px)),
+        (xl, translateY(40px)),
+        (xxl, translateY(50px)));
     }
   }
 
   .content {
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 100%;
     z-index: 15;
-
-    .head {}
+    /*    @include responsive(top,
+     (xs, 11%),
+     (s, 11%),
+     (m, 11%),
+     (l, 11%),
+     (xl, 11%),
+     (xxl, 11%)); */
   }
 }

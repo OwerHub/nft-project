@@ -2,9 +2,9 @@
 
 .titleContainer {
 
-  font-size: 3rem;
+  font-size: 2rem;
   @include responsive(font-size,
-    (xs, 4rem),
+    (xs, 3rem),
     (s, 5rem),
     (m, 7rem),
     (l, 8rem),
@@ -12,6 +12,9 @@
     (xxl, 11rem));
   display: flex;
   justify-content: center;
-  letter-spacing: -15px;
+  letter-spacing: -5px;
+  @include responsive(letter-spacing,
+    (xs, -10px),
+    (s, -15px));
   text-align: center
 }

@@ -17,9 +17,9 @@ $height-values: (xs: 120px,
   width: 100%;
   top: 0;
   overflow: hidden;
-  background-color: rgba(255, 0, 0, .2);
+  //background-color: rgba(255, 0, 0, .2);
 
-  height: 200px;
+  height: 100px;
   @include responsive(height,
     (xs, 120px),
     (s, 170px),
@@ -30,13 +30,14 @@ $height-values: (xs: 120px,
 
   // TESTCOLORS, 
   // TODO DELETE THIS LATER
-  @include responsive(background-color,
-    (xs, rgba(204, 218, 9, 0.2)),
-    (s, rgba(44, 218, 9, 0.2)),
-    (m, rgba(9, 12, 218, 0.2)),
-    (l, rgba(218, 9, 61, 0.2)),
-    (xl, rgba(218, 127, 9, 0.2)),
-    (xxl, rgba(218, 9, 201, 0.2)));
+  /*   @include responsive(background-color,
+    (xs, rgba(204, 218, 9, 0.2)), // 320px
+    (s, rgba(44, 218, 9, 0.2)), //  520px
+    (m, rgba(9, 12, 218, 0.2)), // 768px
+    (l, rgba(218, 9, 61, 0.2)), // 992px
+    (xl, rgba(218, 127, 9, 0.2)), // 1200px
+    (xxl, rgba(218, 9, 201, 0.2))); */
+  // 1440px
 
   .headContentWrapper {
     position: relative;
@@ -50,17 +51,17 @@ $height-values: (xs: 120px,
     .logoWrapper {
       position: relative;
       height: 100%;
-      background-color: rgba(250, 227, 16, 0.2);
+      //background-color: rgba(250, 227, 16, 0.2);
 
       .inkLogo {
-        background-color: rgba(214, 31, 31, 0.5);
+        //background-color: rgba(214, 31, 31, 0.5);
         width: auto;
         height: 80%;
       }
 
       .iconContainer {
         position: relative;
-        background-color: rgb(8, 109, 22);
+        //background-color: rgb(8, 109, 22);
         height: 13%;
         display: flex;
         justify-content: space-between;
@@ -68,6 +69,7 @@ $height-values: (xs: 120px,
 
 
         .blueIcons {
+          height: 13px;
           @include responsive(height,
             (xs, 15px),
             (s, 20px),
@@ -81,6 +83,7 @@ $height-values: (xs: 120px,
 
     }
 
+    // TODO mobile needs an another layout 
     .menuWrapper {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
@@ -89,7 +92,7 @@ $height-values: (xs: 120px,
       padding: 0 2rem 0 2rem;
       font-size: 40px;
       @include responsive(font-size,
-        (xs, 350px),
+        (xs, 30px),
         (s, 35px),
         (m, 40px),
         (l, 45px),
