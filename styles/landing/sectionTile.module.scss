@@ -2,10 +2,10 @@
 
 .titleContainer {
 
-  font-size: 4rem;
+  font-size: 3rem;
   @include responsive(font-size,
-    (xs, 5rem),
-    (s, 6rem),
+    (xs, 4rem),
+    (s, 5rem),
     (m, 7rem),
     (l, 8rem),
     (xl, 10rem),
