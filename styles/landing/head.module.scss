@@ -1,46 +1,6 @@
 @import '../breakpoints.scss';
-
-// TODO - color to the variables 
-
-$headBlue : #02a3fe;
-
-// mixin to mixins 
-@mixin responsive($property, $values...) {
-  @each $value in $values {
-    $breakpoint: nth($value, 1);
-    $value: nth($value, 2);
-    $breakpoint-value: null;
-
-    @if $breakpoint==xs {
-      $breakpoint-value: $breakpoint-xs;
-    }
-
-    @else if $breakpoint==s {
-      $breakpoint-value: $breakpoint-s;
-    }
-
-    @else if $breakpoint==m {
-      $breakpoint-value: $breakpoint-m;
-    }
-
-    @else if $breakpoint==l {
-      $breakpoint-value: $breakpoint-l;
-    }
-
-    @else if $breakpoint==xl {
-      $breakpoint-value: $breakpoint-xl;
-    }
-
-    @else if $breakpoint==xxl {
-      $breakpoint-value: $breakpoint-xxl;
-    }
-
-    @media (min-width: $breakpoint-value) {
-      #{$property}: $value;
-    }
-  }
-}
-
+@import '../mixins.scss';
+@import '../colors.scss';
 
 // TODO use or delete
 $height-values: (xs: 120px,
@@ -145,7 +105,7 @@ $height-values: (xs: 120px,
         display: flex;
         justify-content: center;
         align-items: start;
-        color: $headBlue;
+        color: $typeBlue;
 
 
       }

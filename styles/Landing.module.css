@@ -1,26 +1,13 @@
-.tryRed {
-  background-color: red;
-}
-
-.container{
+.container {
   box-sizing: border-box;
   font-family: 'Banhart';
   position: relative;
-
- /*  width: 100vw;
-  height: 100vh; */
 }
 
 
 
-.contentWrapper{
-/*   position: absolute; */
-  z-index: 5;
-  background-color: rgba(0, 0, 255, 0);
-}
 
-
-.backgroundWrapper{
+.backgroundWrapper {
   position: absolute;
   width: 100%;
   top: 0;
@@ -33,8 +20,7 @@
   height: auto;
 }
 
-.stoneBottomImage{
+.stoneBottomImage {
   position: absolute;
   bottom: 0;
 }
-

@@ -1,0 +1,37 @@
+@import './breakpoints.scss';
+
+@mixin responsive($property, $values...) {
+  @each $value in $values {
+    $breakpoint: nth($value, 1);
+    $value: nth($value, 2);
+    $breakpoint-value: null;
+
+    @if $breakpoint==xs {
+      $breakpoint-value: $breakpoint-xs;
+    }
+
+    @else if $breakpoint==s {
+      $breakpoint-value: $breakpoint-s;
+    }
+
+    @else if $breakpoint==m {
+      $breakpoint-value: $breakpoint-m;
+    }
+
+    @else if $breakpoint==l {
+      $breakpoint-value: $breakpoint-l;
+    }
+
+    @else if $breakpoint==xl {
+      $breakpoint-value: $breakpoint-xl;
+    }
+
+    @else if $breakpoint==xxl {
+      $breakpoint-value: $breakpoint-xxl;
+    }
+
+    @media (min-width: $breakpoint-value) {
+      #{$property}: $value;
+    }
+  }
+}

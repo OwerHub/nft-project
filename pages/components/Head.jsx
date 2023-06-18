@@ -17,30 +17,36 @@ import twitterIcon from '../../assets/icons/blueIcons/twitterIcon.png'
 // TODO - if the icons come in SVG, the shadows more better
 
 function Head() {
+  // TODO maybe the y can be a %
   const menuData = [
     {
       content: 'About',
-      translateY: '20px',
+      translateY: '40px',
+      translateX: '10%',
       rotate: '-10deg'
     },
     {
       content: 'Story',
       translateY: '110px',
+      translateX: '0',
       rotate: '0deg'
     },
     {
       content: 'GameRoom',
       translateY: '5px',
+      translateX: '-35px',
       rotate: '2deg'
     },
     {
       content: 'carton Theater',
       translateY: '75px',
+      translateX: '0',
       rotate: '-5deg'
     },
     {
       content: 'faq',
-      translateY: '30px',
+      translateY: '35px',
+      translateX: '-40px',
       rotate: '10deg'
     }
   ]
@@ -86,7 +92,7 @@ function Head() {
               className={styles.menuItem}
               key={`mnnt${i}`}
               style={{
-                transform: `translateY(${data.translateY}) rotate(${data.rotate})`
+                transform: `translate(${data.translateX}, ${data.translateY}) rotate(${data.rotate})`
               }}
             >
               {data.content}

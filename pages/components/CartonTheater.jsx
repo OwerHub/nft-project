@@ -5,10 +5,6 @@ import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 
 export default function CartonTheater() {
-  const [containerHeight, setContainerHeight] = useState(null)
-
-  const bgref = useRef(null)
-
   return (
     <div className={styles.container}>
       <div className={styles.background}>
