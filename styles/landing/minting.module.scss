@@ -1,3 +1,4 @@
+@import '../mixins.scss';
 
 .ntfPics {
   width: 100%;
@@ -10,28 +11,40 @@
 
 
   .nftCardWrapper {
-    
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     width: 90%;
-    margin: 6rem auto 0;
+    margin: 0 auto 0;
+    padding-top: 1rem;
+    @include responsive (padding-top,
+      (xs, 2rem),
+      (s, 3rem),
+      (l, 5rem));
 
     .nftCard {
-      max-width: 550px;
+      /*  max-width: 550px;
+      min-width: 100px; */
+      min-width: 100px;
+      width: clamp(100px, 15%, 550px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       &:nth-child(2n -1) {
         .nftHeadPic {
           transform: translateY(40px)
         }
       }
+
       .nftHeadPic {
         @extend .ntfPics;
         box-shadow: 0 20px 10px black;
       }
-      .ntfLogoPic{
+
+      .ntfLogoPic {
         @extend .ntfPics;
         margin: 1rem 0 0 0;
       }

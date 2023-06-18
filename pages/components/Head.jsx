@@ -3,6 +3,7 @@ import styles from '../../styles/landing/head.module.scss'
 import Image from 'next/image'
 
 import blackTop from '../../assets/backgrounds/blackTop.webp'
+import backlightsOriginal from '../../assets/etc/backLightsOriginal.webp'
 import inkHeadIcon from '../../assets/etc/inkHeadQuartersLogo.png'
 
 import discordIcon from '../../assets/icons/blueIcons/discordIcon.png'
@@ -58,6 +59,11 @@ function Head() {
     >
       <div className={styles.backgroundWrapper}>
         <Image src={blackTop} className={styles.blackTop} alt="blackTop" />
+        <Image
+          src={backlightsOriginal}
+          className={styles.backLight}
+          alt="backLight"
+        />
       </div>
 
       <div className={styles.headContentWrapper}>
