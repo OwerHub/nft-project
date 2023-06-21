@@ -23,7 +23,7 @@ export default function AboutNew() {
     }
   }, [bgref])
 
-  console.log(containerHeight)
+/*   console.log(containerHeight) */
 
   // PERFORMANCE shadow to SVG
   console.log(bgref.current?.clientHeight)

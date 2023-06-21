@@ -59,25 +59,47 @@ $height-values: (xs: 120px,
         height: 80%;
       }
 
-      .iconContainer {
+      .iconsContainer {
         position: relative;
         //background-color: rgb(8, 109, 22);
         height: 13%;
         display: flex;
         justify-content: space-between;
-        padding: 0 10%;
+        padding: 0 25% 0 16%;
 
 
-        .blueIcons {
-          height: 13px;
-          @include responsive(height,
-            (xs, 15px),
-            (s, 20px),
-            (m, 25px),
-            (l, 35px),
-            (xl, 40px),
-            (xxl, 40px));
-          width: auto;
+        // TODO on hover Icon Y - 20, 
+        .blueIconWrapper {
+          position: relative;
+          background-color: yellow;
+          cursor: pointer;
+
+          .blueIcons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13px;
+            z-index: 2;
+            @include responsive(height,
+              (xs, 15px),
+              (s, 20px),
+              (m, 25px),
+              (l, 35px),
+              (xl, 40px),
+              (xxl, 40px));
+            width: auto;
+          }
+
+          .blueIconShadow {
+            @extend .blueIcons;
+            z-index: 0;
+            transform: translateY(10px);
+          }
+
+          .blueIconAdds {
+            @extend .blueIcons;
+            z-index: 3;
+          }
         }
       }
 

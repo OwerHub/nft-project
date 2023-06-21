@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import styles from '../../styles/landing/head.module.scss'
 import Image from 'next/image'
 
@@ -6,18 +6,25 @@ import blackTop from '../../assets/backgrounds/blackTop.webp'
 import backlightsOriginal from '../../assets/etc/backLightsOriginal.webp'
 import inkHeadIcon from '../../assets/etc/inkHeadQuartersLogo.png'
 
-import discordIcon from '../../assets/icons/blueIcons/discordIcon.png'
 import speakerIcon from '../../assets/icons/blueIcons/speakerIcon.png'
 import speakerIconShadow from '../../assets/icons/blueIcons/speakerIconShadow.png'
 import speakerX from '../../assets/icons/blueIcons/speakerX.png'
+import discordIcon from '../../assets/icons/blueIcons/discordIcon.png'
+import discordIconShadow from '../../assets/icons/blueIcons/discordIconShadow.png'
 import openSeaIcon from '../../assets/icons/blueIcons/openSeaIcon.png'
+import openSeaIconShadow from '../../assets/icons/blueIcons/openSeaIconShadow.png'
 import twitterIcon from '../../assets/icons/blueIcons/twitterIcon.png'
+import twitterIconShadow from '../../assets/icons/blueIcons/twitterIconShadow.png'
 
 // TODO - the blackTop better in svg
 // TODO - Logo is better in  SVG
 // TODO - if the icons come in SVG, the shadows more better
 
 function Head() {
+
+const [mute, setMute] = useState(false)
+
+
   // TODO maybe the y can be a %
   const menuData = [
     {
@@ -66,30 +73,72 @@ function Head() {
         />
       </div>
 
-      <div className={styles.headContentWrapper}>
+      <div div className={styles.headContentWrapper}>
         <div className={styles.logoWrapper}>
           <Image src={inkHeadIcon} className={styles.inkLogo} alt="inkLogo" />
-          <div className={styles.iconContainer}>
-            <Image
-              className={styles.blueIcons}
-              src={speakerIcon}
-              alt="speakercon"
-            />
-            <Image
-              className={styles.blueIcons}
-              src={discordIcon}
-              alt="speakercon"
-            />
-            <Image
-              className={styles.blueIcons}
-              src={openSeaIcon}
-              alt="speakercon"
-            />
-            <Image
-              className={styles.blueIcons}
-              src={twitterIcon}
-              alt="speakercon"
-            />
+          <div className={styles.iconsContainer}>
+
+            <div className={styles.blueIconWrapper}
+              onClick={()=> setMute(!mute)}
+            >
+              { mute && 
+                <Image
+                  className={styles.blueIconAdds}
+                  src={speakerX}
+                  alt="speakerX"
+                />
+              }
+
+              <Image
+                className={styles.blueIcons}
+                src={speakerIcon}
+                alt="speakerIcon"
+              />
+              <Image
+                className={styles.blueIconShadow}
+                src={speakerIconShadow}
+                alt="speakershadow"
+              />
+            </div>
+
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={discordIcon}
+                alt="discordIcon"
+              />
+              <Image
+                className={styles.blueIconShadow}
+                src={discordIconShadow}
+                alt="discordIconShadow"
+              />
+            </div>
+
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={openSeaIcon}
+                alt="openSeaIcon"
+              />
+              <Image
+                className={styles.blueIconShadow}
+                src={openSeaIconShadow}
+                alt="openSeaIconShadow"
+              />
+            </div>
+
+            <div className={styles.blueIconWrapper}>
+              <Image
+                className={styles.blueIcons}
+                src={twitterIcon}
+                alt="speakercon"
+              />
+               <Image
+                className={styles.blueIconShadow}
+                src={twitterIconShadow}
+                alt="twitterIconShadow"
+              />
+            </div>
           </div>
         </div>
         <div className={styles.menuWrapper}>
