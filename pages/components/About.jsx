@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 
 import aboutBackground from '../../assets/backgrounds/aboutBackground.webp'
-import aboutShadow from '../../assets/backgrounds/aboutShadowPerformance.webp'
+import aboutShadow from '../../assets/backgrounds/AboutShadowPerformance.webp'
 
 export default function AboutNew() {
   const [containerHeight, setContainerHeight] = useState(null)

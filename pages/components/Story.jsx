@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
-import storyBackGround from '../../assets/backgrounds/storyBackGround.webp'
+import storyBackGround from '../../assets/backgrounds/storyBackground.webp'
 import SectionTitle from './SectionTitle'
 import styles from '../../styles/landing/story.module.scss'
 
